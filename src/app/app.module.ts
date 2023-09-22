@@ -35,7 +35,8 @@ import { debug } from './+state/meta.reducer';
          metaReducers: [debug]
       }),
       EffectsModule.forRoot([]),
-      !environment.production ? StoreDevtoolsModule.instrument() : []
+      !environment.production ? StoreDevtoolsModule.instrument() : [],
+      StoreModule.forRoot({}, {})
       // FlightBookingModule -- Würde Lazy Loading verhindern!!
    ],
    declarations: [

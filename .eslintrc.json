@@ -27,7 +27,10 @@
           "error",
           {
             "type": "element",
-            "prefix": ["app", "flight"],
+            "prefix": [
+              "app",
+              "flight"
+            ],
             "style": "kebab-case"
           }
         ],
@@ -35,7 +38,10 @@
           "error",
           {
             "type": "attribute",
-            "prefix": ["app", "flight"],
+            "prefix": [
+              "app",
+              "flight"
+            ],
             "style": "camelCase"
           }
         ]
@@ -49,6 +55,14 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {}
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:ngrx/recommended"
+      ]
     }
   ]
 }
